@@ -1,0 +1,25 @@
+{
+  "name": "z",
+  "version": "1.0.0",
+  "author": "Ming-der Wang",
+  "license": "MIT",
+  "bin": {
+    "ethpg": "dist/cli.js"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module":"esm/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "scripts": {
+    "build": "npm run build:commonjs && npm run build:esm",
+    "build:commonjs": "tsc --module commonjs --outDir dist",
+    "build:esm": "tsc --module esnext --outDir esm"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6",
+    "yargs": "^17.7.2"
+  }
+}
