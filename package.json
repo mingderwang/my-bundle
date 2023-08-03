@@ -1,6 +1,6 @@
 {
-  "name": "z",
-  "version": "1.0.0",
+  "name": "my-bundle",
+  "version": "0.0.1",
   "author": "Ming-der Wang",
   "license": "MIT",
   "bin": {
